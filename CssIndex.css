@@ -1,0 +1,297 @@
+#SLIDE_BG {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 9s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('LoginImg/bg-img3.jpg');
+    
+}
+
+@keyframes slideBg {
+
+    0% {
+        background-image: url('IndexImg/bg-img.jpg');
+    }
+
+    25% {
+        background-image: url('IndexImg/bg-img1.jpg');
+    }
+
+    50% {
+        background-image: url('IndexImg/bg-img2.jpg');
+    }
+
+    75% {
+        background-image: url('IndexImg/bg-img3.jpg');
+    }
+
+    100% {
+        background-image: url('IndexImg/bg-img4.jpg');
+    }
+}
+
+/* Header */
+
+.header {
+    overflow: hidden;
+    background-color: #78f4f0;
+    padding: 20px 10px;
+    
+}
+
+    /* Style the header links */
+    .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 10px;
+    }
+
+        /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /* Change the background color on mouse-over */
+        .header a:hover {
+            background-color: #54ab93;
+            color: black;
+        }
+
+        /* Style the active/current link*/
+        .header a.active {
+            background-color: #54ab93;
+            color: white;
+        }
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
+
+/* ------------------------------------------------------------- */
+.buttons {
+    margin: 100%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+    .btn-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .btn-hover:focus {
+        outline: none;
+    }
+
+    .btn-hover.color-1 {
+        background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+        box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    }
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.iskawt-container {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.iskawt {
+    font-family: 'Anton', sans-serif;
+    line-height: 1;
+    letter-spacing: -.07em;
+    color: #fff;
+}
+
+.ks {
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    line-height: 1;
+    margin-top: -11px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3.3s;
+    -webkit-transform: translateX(-1000%);
+    -ms-transform: translateX(-1000%);
+    transform: translateX(-1000%);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #78f4f0;
+}
+
+.animate .ks {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+span {
+    font-family: 'Anton', Helvetica, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0;
+    color: #fff;
+    filter: alpha(opacity=0);
+}
+
+.three {
+    -webkit-transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+    transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3s;
+    letter-spacing: -.07em;
+}
+
+.two {
+    -webkit-transition: all .3s ease-in-out 2s;
+    transition: all .3s ease-in-out 2s;
+    letter-spacing: -.07em;
+}
+
+.one {
+    -webkit-transition: all .3s ease-in-out 1.7s;
+    transition: all .3s ease-in-out 1s;
+    letter-spacing: -.07em;
+}
+
+.animate .one {
+    font-size: 40px;
+    -webkit-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.animate .two {
+    font-size: 60px;
+    -webkit-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.animate .three {
+    font-size: 80px;
+    -webkit-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+/*-----------------------------------------------------------------------------------------------*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #78f4f0;
+  color: white;
+  text-align: right;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #78f4f0;
+  color: white;
+}

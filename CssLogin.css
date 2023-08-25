@@ -1,0 +1,172 @@
+
+body {
+	background-image: url(LoginImg/bg-img3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+/* Style the header with a grey background and some padding */
+.header {
+	overflow: hidden;
+	background-color: #78f4f0;
+	padding: 20px 10px;
+	border-radius: 13px;
+}
+
+	/* Style the header links */
+	.header a {
+		float: left;
+		color: black;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+		font-size: 18px;
+		line-height: 25px;
+		border-radius: 10px;
+	}
+
+		/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+		.header a.logo {
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		/* Change the background color on mouse-over */
+		.header a:hover {
+			background-color: #54ab93;
+			color: black;
+		}
+
+		/* Style the active/current link*/
+		.header a.active {
+			background-color: #54ab93;
+			color: white;
+		}
+
+/* Float the link section to the right */
+.header-right {
+	float: right;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.header-right {
+		float: none;
+	}
+	/*----------------------------------------------------------------------------------------------------- */
+}
+
+.loginDiv {
+	position: static;
+	background-color: #78f4f0;
+	padding: 20px;
+	border-radius: 25px;
+	box-shadow: 12px 12px 0 0 #54ab93;
+}
+
+.forms {
+	width: auto;
+	height: 100px;
+	background-color:;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin: -100px 0 0 -150px;
+	
+}
+
+
+/*----------------------------------------------------------------------------------------------------- */
+.form-control {
+	position: relative;
+	margin: 20px 0;
+	width: 250px;
+	background-color: #78f4f0;
+
+}
+
+	.form-control input {
+		border: 0;
+		border-bottom: 2px solid #333;
+		padding: 15px 0;
+		display: block;
+		font-size: 18px;
+		font-family: 'Muli', sans-serif;
+		width: 100%;
+		transition: 0.1s ease-in;
+	}
+
+		.form-control input:focus,
+		.form-control input:valid {
+			border-bottom-color: white;
+			outline: none;
+		}
+
+			.form-control input:focus + label span,
+			.form-control input:valid + label span {
+				color: #6f7575;
+				transform: translateY(-30px);
+			}
+
+	.form-control label {
+		position: absolute;
+		top: 15px;
+		left: 0;
+	}
+
+		.form-control label span {
+			display: inline-block;
+			font-size: 18px;
+			min-width: 10px;
+			transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+.buttons {
+	margin: 100%;
+	text-align: center;
+}
+
+.btn-hover {
+	width: 200px;
+	font-size: 16px;
+	font-weight: 600;
+	color: black;
+	cursor: pointer;
+	margin: 20px;
+	height: 55px;
+	text-align: center;
+	border: none;
+	background-size: 300% 100%;
+	border-radius: 50px;
+	moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+	.btn-hover:hover {
+		background-position: 100% 0;
+		moz-transition: all .4s ease-in-out;
+		-o-transition: all .4s ease-in-out;
+		-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+	}
+
+	.btn-hover:focus {
+		outline: none;
+	}
+
+	.btn-hover.color-1 {
+		background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+		box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+	}
